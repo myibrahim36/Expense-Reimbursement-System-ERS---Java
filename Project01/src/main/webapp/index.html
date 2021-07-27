@@ -1,0 +1,55 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1"> <!-- charset "ISO-8859-1"  charset="UTF-8" -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href="/Project01/resources/css/style1.css"/>
+    <title>Widad LLC Reimbursements</title>
+</head>
+<body>
+    <section class = "showcase">
+    <!-- <section class = "showcase active"></section> -->
+        <header>
+            <h2 class="logo">Widad SeaLife Works</h2>
+            <div class="toggle "></div>
+            <!-- <div class="toggle active"></div> -->
+        </header>
+
+        <video src="resources/media/sunrise.MOV.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Sailing With the Seagulls</h3>
+            <p>You should be proud you Seal- ed your professional fate with us forever! Always remember our motto: "Today is going to be fintastic,and tomorrow is Dolphinately going to be fishy!" </p>
+            <a href="/Project01/master/sign-in">Login To Your Account</a>
+            <!-- <form method = "post" action="/Project01/master/sign-in">
+            <input type = "submit" value= "Login!"/>
+            </form> -->
+        </div>
+
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector(".showcase")
+
+        menuToggle.addEventListener('click', function(){
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>

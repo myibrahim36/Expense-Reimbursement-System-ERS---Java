@@ -1,0 +1,164 @@
+@charset "ISO-8859-1";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,600;0,700;0,800;1,200&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+
+/* body {
+    margin: 0;
+    padding: 0; */
+    /* background-image: url('/Project01/resources/media/boat.jpg'); url("./resources/media/waterfront.jpg"); */
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-repeat: no-repeat ; */
+    /* background-attachment: fixed; */
+    /* width: 100%; */
+    /* height: 100%; */
+    /* font-family: "Poppins", sans-serif; */
+/* } */
+
+
+.showcase{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(252, 232, 232) ;
+    color: aliceblue;
+    z-index: 2;
+    transition: 0.7s;
+}
+
+.showcase img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.showcase header {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    right: 10;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.showcase div {
+    position: relative;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.myRequestForm {
+    position: relative;
+    z-index: 15;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myRequestForm h4{
+  
+    font-size: 3em;
+    margin: 20px 0;
+    font-weight: 450;
+    max-width: 700 px;
+}
+
+.myRequestForm p {
+    font-size: 1.1em;
+    margin: 20px 0;
+    font-weight: 400;
+    max-width: 700 px;
+}
+
+.reimbtable {
+    position:relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    left: 6000 px;
+    top: 620px;
+    z-index: 2;
+   
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.reimbtable2 {
+    position:relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    left: 6000 px;
+    top: 620px;
+    z-index: 2;
+   
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.table-table-hover123 {
+
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-collapse: collapse;
+    width: 800px;
+    height: 200px;
+    border: 1px solid #bdc3c7;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2), -1px -1px 8 px rgba(0,0,0,0.2);
+    opacity: 0.9;
+}
+
+#header {
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+#myReimbTable th,
+td {
+
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+
+#header {
+    background-color: green;
+    color: #fff;
+}
+
+
+
+
+

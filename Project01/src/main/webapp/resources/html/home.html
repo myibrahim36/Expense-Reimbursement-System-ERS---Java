@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>HOME PAGE</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel = "stylesheet" type = "text/css" href="/Project01/resources/css/loginstyle.css"/>
+<link rel = "stylesheet" type = "text/css" href="/Project01/resources/css/home.css"/>
+</head>
+<body>
+	<section class="showcase"> 
+
+	<header>
+	<div class="login-container">
+		<h2 id = "welcome"></h2>
+		
+		<form id = "bye" method="GET" action="/Project01/master/sign-in">
+			<input type = "submit" value= "Logout!"/>
+		</form>
+	
+	</div>
+</header>	
+
+
+	<img src="/Project01/resources/media/boat.jpg">
+	<div class="overlay"></div>
+
+
+	<div class="myRequestForm"> 
+	<form id = "addRequest" method="GET" action="https://www.google.com/">
+        <h4> Add a new Reimbursement Request</h4>
+
+        <p> Amount $</p> 
+        <input disabled id = "amount" type="number" name="reimbAmount" placeholder="Enter your reimbursement amount"/>
+        <input disabled  id = "userId" type="number" hidden />
+        <br>
+        <p>Description:</p>
+        <input disabled  id = "description" type="text" name="reimbDescription" placeholder="brief description of your request..."/>
+        <br>
+        <p>Type: </p>
+        <select disabled  id="reimbType" >
+        <option value = "1" > LODGING </option>
+        <option value = "2" > TRAVEL </option>
+        <option value = "3" > FOOD </option>
+        <option value = "4" > OTHER </option>
+         </select>
+        <br>
+        <br><br>
+        <input  disabled id = "submitMyRequest" type="submit" value="Submit My Request!"/>
+        
+       
+
+        <br><br><br>
+
+    </form>
+    
+	<div id="resolving"> 
+		<h4> Which request would you like to resolve?</h4>
+    <form id = "filterTable">
+		<p> Enter the Reimbursement Id</p> 
+        <input  id = "reimbId" type="number" name="id" placeholder="Enter Id"/>
+        <input   id = "userId" type="number" hidden />
+        <br>
+
+		<p>Select resolve status: </p>
+        <select   id="statusType" >
+        <option value = "1" > PENDING </option>
+        <option value = "2" > APPROVED </option>
+        <option value = "3" > DENIED </option>
+         </select>
+        <br>
+        <br><br>
+        <input   id = "submitResolveUpdate" type="submit" value="Update Status"/>
+        
+    </form>
+</div>
+
+
+
+	<p> Filter table by:</p>
+	<select tabindex ="2" name="mySelect" id="filterOption" >
+		<option value = "Pending" > PENDING </option>
+        <option value = "Approved" > APPROVED </option>
+        <option value = "Denied" > DENIED </option>
+         </select>
+</div>
+
+	
+	<div class = "reimbtable" id="tableDiv"> 
+	<table id="myReimbTable" class="table table-dark table-sm">
+		<thead>
+			<tr id="header">
+				<th scope="col">Serial Number</th> 
+				<th scope="col">Employee First Name</th>
+				<th scope="col">Employee Last Name</th>
+				<th scope="col">Reimbursement Amount</th>
+				<th scope="col">Reimbursement Status</th>
+				<th scope="col">Date Submitted</th>
+				<th scope="col">Description</th>
+				<th scope="col">Reimbursement Id</th>
+				<!-- <th scope="col">Resolve Status</th> -->
+				<!-- <th scope="col">Type of Reimbursement</th> -->
+				<!-- <th scope="col">Resolver First Name</th> -->
+				<!-- <th scope="col">Resolver Last Name</th> -->
+				
+			</tr>
+		</thead>
+		<tbody id="ReimbursementTableBody">
+		
+		</tbody>
+	</table>
+
+
+	</div>
+
+
+	
+</section>
+	
+	
+	<script type = "text/javascript" src = "/Project01/resources/javascript/myjs.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
